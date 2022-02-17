@@ -4,21 +4,25 @@ let sentence3 = ["No problems have been detected in the workplace"]
 let sentence4 = ["returns the sentence it was given"]
 let sentence5 = ["write a function that uses two parameters"]
 
+let wordChanged = ["best", "seen", "been", "was", "uses"]
+
 function cleanse(sentence, words) {
-	let mySplit = sentence.split("");
-	let result = [""]
+	let result = [""];
+	let mySplit = sentence.split(" ");
 
-	for ( let i of sentence1)
-	let isCleanWord = true;
-
-	for ( let n of words)
-	let isCleanWord = false; 
-			if(typeof "" === "")
-			return ...
-				if(typeof "isCleanWord" === true) {
-					return result + words
-				} else {
-					return result + "*****"
-				}
+	for (const word of mySplit) {
+		let isCleanWord = true;
+		for (const myWords of words) {
+			if(wordChanged === word) {
+				let isCleanWord = false;
+			}			
+		}
+	}
+	if (isCleanWord = true) {
+		result = result + word + ""
+	} else {
+		result = result + "****"
+	}
 
 }
+console.log(cleanse(sentence1))
