@@ -1,3 +1,5 @@
+
+
 let bankAccount1 = {
 	"id": 324020,
 	"name": "Pista",
@@ -45,8 +47,8 @@ let bankAccounts = {
 function getDateOfHighestDeposit(account) {
     let dateOfHighest = null;
     let amountOfHighest = 0;
-};
-	for (transactions of bankAccounts.transaction) {
+
+	for (transactions of bankAccounts) {
 		if(transaction.type === "deposit" && transaction.isSuccesfull === true) {
 			let isRelevant = true;
 			if (isRelevant === true && transaction.amount > amountOfHighest) {
@@ -54,8 +56,7 @@ function getDateOfHighestDeposit(account) {
                 dateOfHighest = transaction.date;
 			}
 		}
-	return dateOfHighest;	
+	return dateOfHighest
 	}
-	
-	
+}	
 	
