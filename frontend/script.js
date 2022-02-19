@@ -7,8 +7,8 @@ let sentence5 = ["write a function that uses two parameters"]
 let wordChanged = ["best", "seen", "been", "was", "uses"]
 
 function cleanse(sentence, words) {
+	let result = "";
 	let mySplit = sentence.split(" ");
-	let result = [""];
 
 	for (const word of mySplit) {
 		let isCleanWord = true;
