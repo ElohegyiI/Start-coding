@@ -37,26 +37,35 @@ let bankAccount3 = {
 }
 
 
-let bankAccounts = {
+/*let bankAccounts = {
 	bankAccount1, 
 	bankAccount2, 
 	bankAccount3
 
-}
+}*/
 
 function getDateOfHighestDeposit(account) {
-    let dateOfHighest = null;
+    
+	/*return "Hello"*/
+	
+	let dateOfHighest = null;
     let amountOfHighest = 0;
 
-	for (transactions of bankAccounts) {
+	for (transaction of account.transaction) {
+		let isRelevant = false;
+		
 		if(transaction.type === "deposit" && transaction.isSuccesfull === true) {
-			let isRelevant = true;
-			if (isRelevant === true && transaction.amount > amountOfHighest) {
-				amountOfHighest = transaction.amount;
-                dateOfHighest = transaction.date;
-			}
+			isRelevant === true;
+			
 		}
-	return dateOfHighest
+
+		if (isRelevant === true && transaction.amount > amountOfHighest) {
+			amountOfHighest = transaction.amount;
+            dateOfHighest = transaction.date;
+		}
 	}
+	return dateOfHighest
+	
 }	
 	
+console.log(getDateOfHighestDeposit(bankAccount2))
