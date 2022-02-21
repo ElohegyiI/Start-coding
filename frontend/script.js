@@ -68,4 +68,4 @@ function getDateOfHighestDeposit(account) {
 	
 }	
 	
-console.log(getDateOfHighestDeposit(bankAccount2))
+console.log(getDateOfHighestDeposit(bankAccount1))
