@@ -1,6 +1,6 @@
 let doors = [];
 
-for (let i = 0; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
 	doors[i] = [
         doors.push(), {
             "isOpen": false,
@@ -8,7 +8,7 @@ for (let i = 0; i <= 100; i++) {
 		}
 	]
 }
-for (let i = 0;  i <= 100; i++) {
+for (let i = 1;  i <= 100; i++) {
 	for (const door of doors) {
 		let shouldToggle = doors.doorNumber % (i + 1);
 			if (shouldToggle === true) {
@@ -18,8 +18,8 @@ for (let i = 0;  i <= 100; i++) {
 	}
 }
 for (const door of doors) {
-	if (door.isOpen === true) {
-		console.log(door.doorNumber);
+	if (doors.isOpen === true) {
+		console.log(doors.doorNumber);
 	}
 }	
 
